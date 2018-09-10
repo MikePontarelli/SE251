@@ -66,27 +66,22 @@ $(document).ready(function(){
 	$(".day").click (function(e) {	
 
 		if ($(this).css ("background-color") == "rgb(255,0,0)") {
-			$(this).css ("background-color", "green");
+			$(this).css ("background-color", "rgb(0,128,0");
 		}
-		else {
-		$(this).css ("background-color", "red");
-		};
+		else if ($(this).css ("background-color") == "rgb(255,255,255)") {
+			$(this).css ("background-color", "rgb(255,0,0)");
+		}
+		else 
+			{$(".day").css ("background-color","rgb(255,255,255)");
+	}}	
 		
-		});	
 		$("#yes").click (function(e){
-			$(".day").css ("background-color","green");
-		
-		
+			$(".day").css ("background-color","rgb(0,128,0");
+	
 		});
 	
 		$("#no").click (function(e){
-			$(".day").css ("background-color","red");
+			$(".day").css ("background-color","rgb(255,0,0)");
 		
 		console.log ($(this).css ("background-color"))});	
-	
-});
-
-
-
-
-
+		};
